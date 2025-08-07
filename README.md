@@ -60,7 +60,16 @@ If 6, print "Saturday".
 If 7, print "Sunday".
 For any other number, print "Invalid day number!"
 End the program.
+(06)
 
+Start the program.
+Display the main menu: 1. snacks, 2. meal, 3. beverages.
+Prompt the user to enter their main choice and read the input.
+Use a switch-case statement for the main choice:
+If choice is 1 (snacks): a. Display snacks menu: 1. samosa, 2. vadapav, 3. maggi. b. Prompt the user to enter their snacks choice and read the input. c. Use a switch-case for snacks choice and print the selected item.
+If choice is 2 (meal): a. Display meal menu: 1. veg, 2. non-veg. b. Prompt the user to enter their meal choice and read the input. c. Use a switch-case for meal choice and print the selected item.
+If choice is 3 (beverages): a. Display beverages menu: 1. tea, 2. coffee, 3. cold drink. b. Prompt the user to enter their beverages choice and read the input. c. Use a switch-case for beverages choice and print the selected item.
+End the program.
 Theory:
 
 (01)
@@ -98,5 +107,12 @@ The program takes a number from 1 to 7 as input and uses a 'switch' statement to
 Each 'case' represents a day (1 = Monday, 2 = Tuesday, etc.).
 If the input doesn't match any case from 1 to 7, the 'default' case prints "Invalid day number!".
 This program demonstrates the use of the 'switch-case' structure for menu-based or choice-driven output.
+(06)
 
+My switch case program about the food menu.
+This C++ program is designed to demonstrate a "nested 'switch-case' menu system", where the user selects from three main categories: "snacks", "meal", and "beverages".
+After choosing a category, the program is intended to display a corresponding submenu and allow the user to select a specific item.
+However, there is a logical flaw in the program: it only takes one input ('choice') and uses it for both the main menu and the submenu selections.
+As a result, the inner 'switch' statements do not function as intended, since they reuse the same value from the main menu instead of asking the user to choose a specific item within the category.
+The program provides a useful foundation for understanding how "nested 'switch-case' structures" can be used to create multi-level menu-driven applications in C++.
 Conclusion: The previous six programs demonstrate the use of conditional and 'switch-case' statements in C++ for building menu-driven applications, making decisions, and performing operations like arithmetic, comparisons, and classifications. They highlight how control structures help in solving real-world problems through interactive user input and logical flow.
